@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>>
+		<script src="test.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			body {
+				background-color: #fff;
+			}
+			
+			.container {
+				text-align: center;
+			}
+			
+			#rowline {
+				display: inline;
+			}
+			
+			#rowline_txt {
+				display: inline;
+				vertical-align: 10px;
+				color: orange;
+			}
+			
+			#request_weather {
+				display: inline;
+				vertical-align: 10px;
+			}
+			
+			.content {
+				margin: 0 auto;
+				width: 1000px;
+				border: 1px dashed #000;
+			}
+			
+			.titleRow {
+				text-align: start;
+			}
+			
+			.weatherSelect {
+				height: 34px;
+			}
+			
+			.weatherItem {
+				display: inline;
+				color: #252525;
+				cursor: pointer;
+				background: #d0ebff;
+				float: left;
+				height: 32px;
+				line-height: 32px;
+				margin-right: 2px;
+				text-align: center;
+				width: 134px;
+				position: relative;
+			}
+			
+			.todayBox {}
+			
+			.sk1 {
+				height: 295px;
+				margin-top: 12px;
+			}
+			
+			.skitme {
+				float: left;
+				height: 100%;
+				display: block;
+			}
+			
+			.sk10 {
+				width: 359px;
+				margin-right: 12px;
+				border: 1px dashed #000;
+			}
+			
+			.sk10 .limit {
+				background-color: #FFA500;
+			}
+			
+			.sk10 .limit .img {
+				background-position: -36px -314px;
+				width: 10px;
+			}
+			
+			.sk11 {
+				width: 200px;
+				margin-right: 12px;
+				border: 1px dashed #000;
+			}
+			
+			.sk12 {
+				width: 200px;
+				border: 1px dashed #000;
+			}
+			
+			.img {
+				background-position: -36px -314px;
+			}
+		</style>
+		<title></title>
+	</head>
+
+	<body>
+		<div class="container" ng-controller="MainCtrl">
+			<div class="row">
+				<!--<a id="rowline" href="https://www.juhe.cn"><img src="https://www.juhe.cn/themes/v5/public/images/loginlogo.png" class="img-responsive"></a>-->
+				<h1 id="rowline_txt">aaa</h1>
+				<button class="button" id="request_weather">New Message</button>
+			</div>
+			<div class="content">
+				<div class="" id="row_box">
+					<div id="row_list">
+						<div class="titleRow">
+							<a class="titleRow t1" id="row_city">嗷嗷</a>
+							<span class="titleRow t1" id="row_city">></span>
+							<span class="titleRow t1" id="row_date_y">嗷嗷</span>
+						</div>
+						<ul class="weatherSelect">
+							<li class="weatherItem">第一天</li>
+							<li class="weatherItem">第二天</li>
+							<li class="weatherItem">第三天</li>
+							<li class="weatherItem">第四天</li>
+							<li class="weatherItem">第五天</li>
+							<li class="weatherItem">第六天</li>
+						</ul>
+						<div class="todayBox">
+							<div class="sk1">
+								<div class="sk10 skitme">
+									<div class="limit">
+										<img class="img" src="../img/iconall.png" />
+										<span class="span"></span>
+									</div>
+								</div>
+								<div class="sk11 skitme"></div>
+								<div class="sk12 skitme"></div>
+							</div>
+						</div>
+						<p id="row_week">111</p>
+						<p id="row_temperature"></p>
+						<p id="row_weather"></p>
+						<p id="row_wind"></p>
+						<p id="row_dressing_index"></p>
+						<p id="row_dressing_advice"></p>
+					</div>
+				</div>
+				<h4 class="text-center">tit</h4>
+				<div class="col-xs-4 col-md-2" ng-repeat="item in items">
+					<div class="text-center status">
+						<h5>{{item.week}}</h5>
+						<p>{{item.temperature}}</p>
+						<p>{{item.weather}}</p>
+						<p>{{item.wind}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
