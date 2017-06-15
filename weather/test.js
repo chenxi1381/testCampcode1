@@ -14,7 +14,7 @@ function getInfo() {
 
 			var line = $("#row_list").clone();
 			var result = data.result.today;
-				
+
 			line.find("#row_city").text(result.city);
 			line.find('#row_date_y').text(result.date_y);
 			line.find('#row_week').text(result.week);

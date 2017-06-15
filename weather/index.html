@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!--http://www.weather.com.cn/weather1d/101010100.shtml-->
 	<head>
 		<meta charset="utf-8" />
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>>
@@ -14,6 +14,7 @@
 			
 			body {
 				background-color: #fff;
+				font: 14px/1.6 "Microsoft Yahei", "Tahoma", "SimSun";
 			}
 			
 			.container {
@@ -63,47 +64,124 @@
 				position: relative;
 			}
 			
-			.todayBox {}
+			.todayBox {
+				overflow: hidden;
+			}
 			
-			.sk1 {
+			.todayBox .sk1 {
 				height: 295px;
 				margin-top: 12px;
 			}
 			
-			.skitme {
+			.todayBox .skitme {
 				float: left;
 				height: 100%;
 				display: block;
 			}
 			
-			.sk10 {
+			.todayBox .position {
+				position: absolute;
+			}
+			
+			.todayBox .sk1 .pic {
+				background-image: url(../img/iconall.png);
+			}
+			
+			.todayBox .sk1 .sk10 {
 				width: 359px;
 				margin-right: 12px;
 				border: 1px dashed #000;
 			}
 			
-			.sk10 .limit {
-				background-color: #FFA500;
+			.todayBox .sk1 .sk10 .limit {
+				left: 220px;
+				top: 380px;
 			}
 			
-			.sk10 .limit .img {
+			.todayBox .sk1 .sk10 .limit i {
 				background-position: -36px -314px;
-				width: 10px;
+				display: block;
+				width: 50px;
+				float: left;
+				height: 24px;
+				margin-right: 8px;
+				width: 24px;
 			}
 			
-			.sk11 {
+			.todayBox .sk1 .sk10 .limit span {
+				display: block;
+				float: left;
+			}
+			
+			.todayBox .sk1 .sk10 .time {
+				color: #7e7e7e;
+				font-size: 13px;
+				left: 26px;
+				top: 140px;
+			}
+			
+			.todayBox .sk1 .sk10 .tem {
+				left: 24px;
+				top: 340px;
+			}
+			
+			.todayBox .sk1 .sk10 .tem i {
+				background-position: -2px -289px;
+				float: left;
+				height: 24px;
+				margin-right: 8px;
+				width: 24px;
+			}
+			
+			.todayBox .sk1 .sk10 .wind {
+				left: 220px;
+				top: 340px;
+			}
+			
+			.todayBox .sk1 .sk10 .wind i {
+				background-position: -36px -291px;
+				float: left;
+				height: 24px;
+				margin-right: 8px;
+				width: 24px;
+			}
+			
+			.todayBox .sk1 .sk10 .quality {
+				left: 24px;
+				top: 380px;
+			}
+			
+			.todayBox .sk1 .sk10 .quality i {
+				background-position: -2px -314px;
+				float: left;
+				height: 24px;
+				margin-right: 8px;
+				width: 24px;
+			}
+			
+			.todayBox .sk1 .sk10 .temper {
+				left: 149px;
+				top: 242px;
+			}
+			
+			.todayBox .sk1 .sk10 .temper span {
+				color: #2d76b6;
+				font-size: 70px;
+			}
+			/*.todayBox .sk1 .sk10 .time span {
+				color: #7e7e7e;
+				font-size: 13px;
+			}*/
+			
+			.todayBox .sk11 {
 				width: 200px;
 				margin-right: 12px;
 				border: 1px dashed #000;
 			}
 			
-			.sk12 {
+			.todayBox .sk12 {
 				width: 200px;
 				border: 1px dashed #000;
-			}
-			
-			.img {
-				background-position: -36px -314px;
 			}
 		</style>
 		<title></title>
@@ -135,10 +213,29 @@
 						<div class="todayBox">
 							<div class="sk1">
 								<div class="sk10 skitme">
-									<div class="limit">
-										<img class="img" src="../img/iconall.png" />
-										<span class="span"></span>
+									<div class="limit position">
+										<i class="pic"></i>
+										<span class="span">限行4和6</span>
 									</div>
+									<div class="time position">
+										<span class="span">刷新时间2017年6月15日17:27:48</span>
+									</div>
+									<div class="tem position">
+										<i class="pic"></i>
+										<span class="span">相对湿度50%</span>
+									</div>
+									<div class="wind position">
+										<i class="pic"></i>
+										<span class="span">西南分3级</span>
+									</div>
+									<div class="quality position">
+										<i class="pic"></i>
+										<span class="span">优</span>
+									</div>
+									<div class="temper position">
+										<span class="span">24度</span>
+									</div>
+
 								</div>
 								<div class="sk11 skitme"></div>
 								<div class="sk12 skitme"></div>
