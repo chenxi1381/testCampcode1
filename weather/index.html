@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<!--http://www.weather.com.cn/weather1d/101010100.shtml-->
+	<!--http://www.weather.com.cn/weather1d/101010100.shtml-->
+
 	<head>
 		<meta charset="utf-8" />
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>>
@@ -169,6 +170,36 @@
 				color: #2d76b6;
 				font-size: 70px;
 			}
+			
+			.todayBox .sk1 .sk10 .tempic {
+				background-position: 0 0;
+				height: 132px;
+				left: 62px;
+				top: 61px;
+				width: 76px;
+			}
+			
+			.todayBox .sk1 .sk10 .tempic div {
+				position: absolute;
+				bottom: 35px;
+				left: 35px;
+				background-color: aqua;
+				width: 15px;
+			}
+			
+			.todayBox .sk1 .sk10 .tempic .t {
+				background-position: -35px -137px;
+				height: 8px;
+				display: block;
+				width: 15px;
+			}
+			
+			.todayBox .sk1 .sk10 .tempic .c {
+				background-position: -35px -142px;
+				display: block;
+				height: 38px;
+				width: 15px;
+			}
 			/*.todayBox .sk1 .sk10 .time span {
 				color: #7e7e7e;
 				font-size: 13px;
@@ -178,6 +209,12 @@
 				width: 200px;
 				margin-right: 12px;
 				border: 1px dashed #000;
+			}
+			
+			.todayBox .sk11 h1 {
+				font-size: 13px;
+				margin-top: 14px;
+				line-height: 18px;
 			}
 			
 			.todayBox .sk12 {
@@ -191,7 +228,7 @@
 	<body>
 		<div class="container" ng-controller="MainCtrl">
 			<div class="row">
-				<!--<a id="rowline" href="https://www.juhe.cn"><img src="https://www.juhe.cn/themes/v5/public/images/loginlogo.png" class="img-responsive"></a>-->
+				<a id="rowline" href="https://www.juhe.cn"><img src="https://www.juhe.cn/themes/v5/public/images/loginlogo.png" class="img-responsive"></a>
 				<h1 id="rowline_txt">aaa</h1>
 				<button class="button" id="request_weather">New Message</button>
 			</div>
@@ -236,9 +273,28 @@
 									<div class="temper position">
 										<span class="span">24度</span>
 									</div>
-
+									<div class="pic tempic position">
+										<div>
+											<i class="t pic"></i>
+											<i class="c pic"></i>
+										</div>
+									</div>
 								</div>
-								<div class="sk11 skitme"></div>
+								<div class="sk11 skitme">
+									<h1>17日白天</h1>
+									<img />
+									<p class="temper">
+										<span>35度</span>
+									</p>
+									<div class="wind">
+										<i></i>
+										<span>3-4级风</span>
+									</div>
+									<div class="sun">
+										<i></i>
+										<span>日出4：04</span>
+									</div>
+								</div>
 								<div class="sk12 skitme"></div>
 							</div>
 						</div>
@@ -261,7 +317,6 @@
 				</div>
 			</div>
 		</div>
-
 	</body>
 
 </html>
