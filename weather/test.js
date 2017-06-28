@@ -49,15 +49,11 @@ var test = {
 			console.log(item.charCodeAt(0).toString(2));
 		})
 //		console.log(codes);
-		
 	}
 }
 $(function(){
-		var strs = "王晶晶";
-		test.testFunction(strs);
 //	test.iniTiation(strs);
-	
-	
+	minFunction.iniTiation();
 });
 //
 function CallAjax(url,callBack) {
