@@ -17,7 +17,6 @@ var minFunction = {
 			line.find(".todayBox .sk1 .sk10 .tem span").text("空气湿度："+result.sk.humidity);
 			
 			
-			
 			line.find("#row_city").text(result.city);
 			line.find('#row_date_y').text(result.date_y);
 			line.find('#row_week').text(result.week);
@@ -39,8 +38,26 @@ var minFunction = {
 	}
 }
 
+var test = {
+
+	testFunction:function(strs){
+		var a = strs.split("");
+		var codes = [];
+		a.map(function(item){
+			var code = item.charCodeAt(0);
+			codes.push(code);
+			console.log(item.charCodeAt(0).toString(2));
+		})
+//		console.log(codes);
+		
+	}
+}
 $(function(){
-	minFunction.iniTiation();
+		var strs = "王晶晶";
+		test.testFunction(strs);
+//	test.iniTiation(strs);
+	
+	
 });
 //
 function CallAjax(url,callBack) {

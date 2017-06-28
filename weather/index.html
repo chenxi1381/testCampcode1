@@ -84,8 +84,12 @@
 				position: absolute;
 			}
 			
-			.todayBox .sk1 .pic {
+			.todayBox .pic {
 				background-image: url(../img/iconall.png);
+			}
+			
+			.todayBox .picwe {
+				background-image: url(../img/blue80.png);
 			}
 			
 			.todayBox .sk1 .sk10 {
@@ -211,10 +215,65 @@
 				border: 1px dashed #000;
 			}
 			
-			.todayBox .sk11 h1 {
+			.todayBox .sk11 .data {
 				font-size: 13px;
 				margin-top: 14px;
 				line-height: 18px;
+			}
+			
+			.todayBox .sk11 .icon {
+				background-position: -320px 0;
+				height: 80px;
+				width: 80px;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.todayBox .sk11 .temper {
+				margin-top: 40px;
+				display: block;
+				font-size: 35px;
+				color: #7f7f7f;
+			}
+			
+			.todayBox .sk11 .wind {
+				margin-top: 11px;
+				height: 30px;
+				line-height: 20px;
+			}
+			
+			.todayBox .sk11 .wind i {
+				background-position: -83px -46px;
+				display: inline-block;
+				height: 25px;
+				width: 24px;
+				vertical-align: top;
+			}
+			
+			.todayBox .sk11 .wind span {
+				display: inline-block;
+				height: 34px;
+				line-height: 26px;
+			}
+			
+			.todayBox .sk11 .sun {
+				margin-top: 11px;
+			}
+			
+			.todayBox .sk11 .sun i {
+				background-position: -33px -269px;
+				height: 22px;
+				display: inline-block;
+				left: 27px;
+				top: -1px;
+				width: 22px;
+			}
+			
+			.todayBox .sk11 .sun span {
+				display: inline-block;
+				height: 34px;
+				vertical-align: top;
+				line-height: 26px;
 			}
 			
 			.todayBox .sk12 {
@@ -281,17 +340,17 @@
 									</div>
 								</div>
 								<div class="sk11 skitme">
-									<h1>17日白天</h1>
-									<img />
+									<h1 class="data">17日白天</h1>
+									<i class="icon picwe" /></i>
 									<p class="temper">
 										<span>35度</span>
 									</p>
-									<div class="wind">
-										<i></i>
+									<p class="wind">
+										<i class="pic"></i>
 										<span>3-4级风</span>
-									</div>
+									</p>
 									<div class="sun">
-										<i></i>
+										<i class="pic"></i>
 										<span>日出4：04</span>
 									</div>
 								</div>

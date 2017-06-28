@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.titlebar {
+				background-color: #24292e;
+				width: 100%;
+			}
+			
+			.titlebar .content {
+				margin: auto auto;
+				overflow: hidden;
+				width: 860px;
+				display: block;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			
+			.titlebar .content .icon {
+				background: white;
+			}
+			
+			.titlebar .content .item {
+				float: left;
+			}
+			
+			.titlebar .content .labelform {
+				margin-left: 20px;
+			}
+			
+			.titlebar .content .labelform .repository {
+				font-size: inherit;
+				line-height: 28px;
+				color: rgba(255, 255, 255, 0.75);
+			}
+			
+			.titlebar .content .labelform .search {
+				display: table-cell;
+				min-height: 26px;
+				border: 0;
+				display: block;
+				height: 30px;
+				background-color: #F5F5F5;
+				border-radius: 5px;
+				margin-left: 30px;
+			}
+			
+			.titlebar .content .navigation {
+				margin-left: 30px;
+				color: floralwhite;
+			}
+			
+			.titlebar .content .navigation .navigationitem {
+				margin-left: 10px;
+				color: floralwhite;
+				height: 30px;
+				line-height: 30px;
+			}
+		</style>
+		<title></title>
+	</head>
+
+	<body>
+		<div class="titlebar">
+			<div class="content">
+				<div class="icon">
+					<svg style="display: block" class="item" height="32" version="1.1" viewBox="0 0 16 16" width="32">
+						<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+					</svg>
+				</div>
+
+				<div class="labelform item">
+					<span class="repository item">This repository</span>
+					<input class="search item" />
+				</div>
+				<div class="navigation item">
+					<span class="pullrequest navigationitem">Pull request</span>
+					<span class="issues navigationitem">Issues</span>
+					<span class="marketplace navigationitem">Marketplace</span>
+					<span class="gist navigationitem">Gist</span>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
